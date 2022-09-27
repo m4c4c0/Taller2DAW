@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ordenando una pizza</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+
+<body>
+    <header id="box">
+        <h1 id="flashlight">
+
+            <h3 id="flashlight1">Elige un combo</h3>
+        </h1>
+    </header>
+
+    <form action="javascript:void(0);" class="demoForm" id="orden">
+        <fieldset>
+
+            <legend id="superior">Tipos de combo </legend>
+            <break></break>
+            <div id="arriba">
+                <p>Elgie un combo:</p>
+                <label><input type="radio" name="size" value="7.25" checked="checked" />Super combo</label>
+                <label><input type="radio" name="size" value="5.75" />Combo personal</label>
+                <label><input type="radio" name="size" value="3.50" />Combo infantil</label>
+                <input type="hidden" name="total_combo" value="0.00" />
+            </div>
+
+
+            <p id="extras_orden"><label>Adicional a la orden:</label><br>
+                <label><input type="checkbox" name="mushrooms" value="1.50" />Ensalada</label><br>
+                <label><input type="checkbox" name="onions" value="1.25" />Papa frita</label><br>
+
+                <label><input type="checkbox" name="black olives" value="1.75" />Pieza de pollo
+                    grande</label><br>
+                <label><input type="checkbox" name="ham" value="1.50" />Pieza de pollo mediana</label><br>
+                <label><input type="checkbox" name="pepperoni" value="1.25" />Pieza de pollo pequeña</label><br>
+                <label><input type="checkbox" name="pepperoni" value="1.50" />Bebida grande</label><br>
+                <label><input type="checkbox" name="pepperoni" value="1.25" />Bebida mediana</label><br>
+                <label><input type="checkbox" name="pepperoni" value="1.00" />Bebida pequeña</label><br>
+                <label><input type="checkbox" name="pepperoni" value="0.50" />Café</label><br>
+                <label><input type="checkbox" name="pepperoni" value="1.25" />Postre</label><br>
+                <input type="hidden" name="total_extra" value="0.00" />
+            </p>
+            <p id="abajo">
+                <label> Subtotal: $<input type="text" name="total" class="num" value="0.00" readonly="readonly"
+                        id="inputt" /> </label><br>
+                <label> Total a pagar: $<input type="text" name="total3" class="num" value="0.00" readonly="readonly"
+                        id="inputt" />
+                </label>
+            </p>
+            <p id="botoncito">
+                <input type="submit" name="submit" value="Ordenar" />
+            </p>
+        </fieldset>
+    </form>
+    <fieldset id="filed">
+        <div class="three">
+            <legend>Añade un comentario</legend>
+            <button id="botone" onclick="nameFunction()">Añadir</button>
+            <form action="#" id="mainform" method="get" name="mainform">
+                <span id="myForm"></span>
+                <p></p>
+
+            </form>
+        </div>
+    </fieldset>
+    <script src="js/restaurante.js"></script>
+</body>
+
+</html>
